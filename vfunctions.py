@@ -94,7 +94,6 @@ def show_magic_dataframe(df):
     
         # Display the selected columns in the table
         st.write(df[selected_columns])
-        #st.write(df[selected_columns].T)  # Transpose the DataFrame
         
         
 
