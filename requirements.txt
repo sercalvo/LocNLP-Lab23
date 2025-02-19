@@ -1,4 +1,4 @@
-altair==5.5.0
+altair==5.5.0 
 beautifulsoup4==4.13.3
 flair==0.15.1
 keybert==0.9.0
@@ -24,3 +24,4 @@ en_core_web_sm @ https://github.com/explosion/spacy-models/releases/download/en_
 en_core_web_md @ https://github.com/explosion/spacy-models/releases/download/en_core_web_md-3.8.0/en_core_web_md-3.8.0-py3-none-any.whl
 es_core_news_sm @ https://github.com/explosion/spacy-models/releases/download/es_core_news_sm-3.8.0/es_core_news_sm-3.8.0-py3-none-any.whl
 es_core_news_md @ https://github.com/explosion/spacy-models/releases/download/es_core_news_md-3.8.0/es_core_news_md-3.8.0-py3-none-any.whl
+
