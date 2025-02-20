@@ -12,6 +12,7 @@ plotly==6.0.0
 Requests==2.32.3
 scikit_learn==1.6.1
 seaborn==0.13.2
+sentencepiece==0.2.0
 spacy==3.8.4
 st_annotated_text==4.0.2
 streamlit==1.42.1
