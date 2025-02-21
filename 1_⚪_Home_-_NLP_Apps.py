@@ -20,7 +20,20 @@ from PIL import Image
 d = path.dirname(__file__) if "__file__" in locals() else os.getcwd()
 #page_logo = Image.open(path.join(d, "..\\img\\LocNLP23.png"))
 #page_logo = Image.open(path.join(d, "..\\img\\LocNLP-lab23.png"))
-page_logo = Image.open(path.join(d, '..img\\LocNLP-lab23.png'))
+#page_logo = Image.open(path.join(d, '..img\\LocNLP-lab23.png'))
+
+import os
+
+
+# Get the absolute path of the script
+d = os.path.dirname(os.path.abspath(__file__))
+
+# Use os.path.join for cross-platform compatibility
+image_path = os.path.join(d, "..", "img", "LocNLP-lab23.png")
+
+# Open the image
+page_logo = Image.open(image_path)
+
 
 
 with open("style.css") as f:
