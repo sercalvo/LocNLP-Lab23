@@ -19,6 +19,7 @@ import plotly.graph_objects as go
 
 import os
 from os import path
+nltk.download('punkt_tab')
 
 st.set_page_config(
     page_title="LocNLP23Lab - Sentiment & Subjectivity",
