@@ -18,7 +18,7 @@ from PIL import Image
 
 # A helloworld
 d = path.dirname(__file__) if "__file__" in locals() else os.getcwd()
-page_logo = Image.open(path.join(d, 'img\\LocNLPlab23.png'))
+page_logo = Image.open(path.join(d, 'img//LocNLPlab23.png'))
 
 
 with open("style.css") as f:
