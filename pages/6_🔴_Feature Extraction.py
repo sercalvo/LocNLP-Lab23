@@ -97,6 +97,8 @@ if st.button("Extract information from text"):
             continue
         unique_emails.add(email)  
 
+    email_list = list(unique_emails)
+
     # Display the results
     st.header("Information extraction results")
     if names_list:
