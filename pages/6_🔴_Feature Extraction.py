@@ -73,6 +73,7 @@ if st.button("Extract information from text"):
     unique_names = set()
     unique_organizations = set()
     unique_locations = set()
+    unique_emails = set()
     
     for entity, label in entities:
         if label == "PERSON":
@@ -91,6 +92,10 @@ if st.button("Extract information from text"):
 
     # Find emails using regular expression
     email_list = re.findall(r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}\b', text) or []
+    for email in email_list:
+        if email in unique_names:
+            continue
+        unique_emails.add(email)  
 
     # Display the results
     st.header("Information extraction results")
