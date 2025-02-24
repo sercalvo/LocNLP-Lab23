@@ -5,15 +5,16 @@ Created on Fri Dec  9 12:59:10 2022
 @author: Sergio
 """
 
-
-
-import streamlit as st
 import time
 import os
 from os import path
-
+import streamlit as st
 # La configuración de la página debe estar en la PRIMERA línea después de las importaciones
 st.set_page_config(page_title="LocNLP Lab", layout="wide")
+
+
+
+
 
 GA_ID = "G-K1YQS7TZCV"  # Reemplázalo con tu ID de Google Analytics
 GA_SCRIPT = f"""
