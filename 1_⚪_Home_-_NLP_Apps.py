@@ -5,6 +5,18 @@ Created on Fri Dec  9 12:59:10 2022
 @author: Sergio
 """
 
+GA_ID = "G-K1YQS7TZCV"  # Reemplázalo con tu ID de Google Analytics
+GA_SCRIPT = f"""
+    <script async src="https://www.googletagmanager.com/gtag/js?id={GA_ID}"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){{dataLayer.push(arguments);}}
+        gtag('js', new Date());
+        gtag('config', '{GA_ID}');
+    </script>
+"""
+st.markdown(GA_SCRIPT, unsafe_allow_html=True)
+
 import streamlit as st
 import time
 import os
