@@ -9,6 +9,7 @@ import time
 import os
 from os import path
 import streamlit as st
+import streamlit.components.v1 as components
 # La configuración de la página debe estar en la PRIMERA línea después de las importaciones
 st.set_page_config(
     page_title="LocNLP Lab", 
@@ -27,8 +28,8 @@ GA_SCRIPT = f"""
     </script>
 """
 
-# Mostrar el script de Google Analytics
-st.markdown(GA_SCRIPT, unsafe_allow_html=True)
+# 🔹 Cargar el script con st.components.v1.html()
+components.html(GA_SCRIPT, height=0, scrolling=False)
 
 
 from PIL import Image
