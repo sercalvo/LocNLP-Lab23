@@ -5,6 +5,16 @@ Created on Fri Dec  9 12:59:10 2022
 @author: Sergio
 """
 
+
+
+import streamlit as st
+import time
+import os
+from os import path
+
+# La configuración de la página debe estar en la PRIMERA línea después de las importaciones
+st.set_page_config(page_title="LocNLP Lab", layout="wide")
+
 GA_ID = "G-K1YQS7TZCV"  # Reemplázalo con tu ID de Google Analytics
 GA_SCRIPT = f"""
     <script async src="https://www.googletagmanager.com/gtag/js?id={GA_ID}"></script>
@@ -16,16 +26,9 @@ GA_SCRIPT = f"""
     </script>
 """
 
-# Asegúrate de que Streamlit permita contenido HTML en toda la página
-st.set_page_config(page_title="LocNLP Lab", layout="wide")
-
 # Mostrar el script de Google Analytics
 st.markdown(GA_SCRIPT, unsafe_allow_html=True)
 
-import streamlit as st
-import time
-import os
-from os import path
 
 st.set_page_config(
     page_title="LocNLP23 Lab23",
