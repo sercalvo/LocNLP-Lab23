@@ -15,6 +15,11 @@ GA_SCRIPT = f"""
         gtag('config', '{GA_ID}');
     </script>
 """
+
+# Asegúrate de que Streamlit permita contenido HTML en toda la página
+st.set_page_config(page_title="LocNLP Lab", layout="wide")
+
+# Mostrar el script de Google Analytics
 st.markdown(GA_SCRIPT, unsafe_allow_html=True)
 
 import streamlit as st
