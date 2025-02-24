@@ -10,12 +10,12 @@ import os
 from os import path
 import streamlit as st
 # La configuración de la página debe estar en la PRIMERA línea después de las importaciones
-st.set_page_config(page_title="LocNLP Lab", layout="wide")
+st.set_page_config(
+    page_title="LocNLP Lab", 
+    layout="wide",
+    page_icon="img//V-Logo-icon48.png",)
 
-
-
-
-
+# Google Analytics
 GA_ID = "G-K1YQS7TZCV"  # Reemplázalo con tu ID de Google Analytics
 GA_SCRIPT = f"""
     <script async src="https://www.googletagmanager.com/gtag/js?id={GA_ID}"></script>
@@ -31,10 +31,6 @@ GA_SCRIPT = f"""
 st.markdown(GA_SCRIPT, unsafe_allow_html=True)
 
 
-st.set_page_config(
-    page_title="LocNLP23 Lab23",
-    page_icon="img//V-Logo-icon48.png",
-)
 from PIL import Image
 
 # A helloworld
